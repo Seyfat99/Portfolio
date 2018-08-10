@@ -576,7 +576,7 @@ nav .main-nav-list{
 
 nav li {
     display: inline;
-    padding-left: 3%;
+    margin-left: 3%;
 }
 
 nav li a {
