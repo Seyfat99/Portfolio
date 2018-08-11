@@ -1074,6 +1074,9 @@ MEDIA QUERIES
     .hero {
      text-align: center;
     }
+    .homepage-h1 {
+        font-size: 5rem;
+    }
     .index-section {
         margin: 5% 3%;
         padding: 5%;
