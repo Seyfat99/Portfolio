@@ -565,6 +565,7 @@ nav {
     top: 0;
     display: flex;
     align-items: center;
+    z-index: 100;
 }
 nav .main-nav-list{
     margin:0 2% 0 0 ;
@@ -635,10 +636,9 @@ HOME PAGE
     font: bold 1.5rem 'Archivo', sans-serif;
 }
 .arrowSVG {
-    width: 100px;
-    transform: rotate(90deg);
+    width: 60px;
     position: absolute;
-    top: 80%;
+    top: 90%;
 }
 
 .index-section {
