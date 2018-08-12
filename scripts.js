@@ -8,10 +8,10 @@ selectHamburger.addEventListener('click', function() {
 
 //Form Validation
 
-function formValidate() {
-
+document.myForm.onsubmit = function(e) {
     firstLastName();
     email();
+    e.preventDefault();
 }
 
 function firstLastName () {
@@ -23,14 +23,24 @@ function firstLastName () {
         alert('First And Last Name Is Required');
         return false;
     }
+
+    if (firstName.length < 1 || lastName.length < 1) {
+        alert('first and last name are too short');
+        return false;
+    }
     
 }
 function email () {
 
     var email = document.myForm.email.value;
+    // var emailRegex = /[a-z]{2,10}@[a-z]{2,10}.[a-z]{2,3}/i;
 
     if (email === "") {
         alert('Email Is Required');
         return false;
     }
+    // else if(emailRegex.test(email)) {
+    //     alert('please enter a valid email');
+    //     return false;
+    // }
 }
